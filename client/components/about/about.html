@@ -1,0 +1,29 @@
+<navbar></navbar>
+<br/>
+<h3>This is the About page</h3>
+<section>
+    About us.
+</section>
+<br>
+<br>
+<div>
+    <button class="btn btn-primary" ng-click="vm.getServerData()" translate="lblServerData"></button>
+    <br>
+    <br>
+    <table class="table table-striped table-flip-scroll">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="basicCollectionObject in vm.basicCollection">
+                <td>{{basicCollectionObject.firstName}}</td>
+                <td>{{basicCollectionObject.lastName}}</td>
+                <td>{{basicCollectionObject.testCount}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
